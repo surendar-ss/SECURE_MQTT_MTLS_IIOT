@@ -133,9 +133,9 @@ wireshark &
 tcp.port == 8883
 
 What you should see:
-TLSv1.3 — Client Hello with SNI=localhost
-TLSv1.3 — Server Hello + Change Cipher Spec
-TLSv1.3 — Application Data (all MQTT payload encrypted, unreadable)
+TLSv1.3 Client Hello with SNI=localhost
+TLSv1.3 Server Hello + Change Cipher Spec
+TLSv1.3 Application Data (all MQTT payload encrypted, unreadable)
 NO plaintext MQTT PUBLISH frames proof of encryption
 
 
