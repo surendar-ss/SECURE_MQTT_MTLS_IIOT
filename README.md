@@ -10,8 +10,8 @@ Mutual TLS (mTLS) ensures both sides authenticate each other before communicatio
 ### Logical Flow 
 
 ┌─────────────────────────────────────────────────────────────┐
-│              Certificate Authority (CA)                     │
-│         Signs all certificates (broker + clients)           │
+│              Certificate Authority (CA)                      │
+│         Signs all certificates (broker + clients)            │
 └──────────────────┬──────────────────────┬───────────────────┘
                    │ Signs                │ Signs
           ┌────────▼──────┐      ┌────────▼──────────┐
@@ -21,9 +21,9 @@ Mutual TLS (mTLS) ensures both sides authenticate each other before communicatio
           └───────────────┘      └───────────────────┘
                    │
         ┌──────────▼──────────┐
-        │  Wireshark Verified │
+        │  Wireshark Verified  │
         │  TLS 1.3 Handshake  │
-        │  Port 8883 Captured │
+        │  Port 8883 Captured  │
         └─────────────────────┘
 
 
