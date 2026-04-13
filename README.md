@@ -143,11 +143,11 @@ References & Standards
 
 MQTT v3.1.1 Specification — OASIS
 Eclipse Mosquitto Documentation
-IEC 62443 — Industrial Cybersecurity Standard
-RFC 8446 — TLS 1.3
+IEC 62443 Industrial Cybersecurity Standard
+RFC 8446 TLS 1.3
 paho mqtt Python Client
 
-If you are working on IIoT, industrial automation, or predictive maintenance — let's connect.
+If you are working on IIoT, industrial automation, or predictive maintenance let's connect.
 Surendar S IIoT 
 linkedin.com/in/surendar-srinivasan26
 Star this repo if it helped you understand mTLS for industrial applications.
