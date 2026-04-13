@@ -3,30 +3,6 @@
 The system uses a Certificate Authority (CA) to establish trust between the MQTT broker and client devices.
 Mutual TLS (mTLS) ensures both sides authenticate each other before communication begins.
 
-###  mTLS Architecture Diagram
-
-![mTLS Architecture](docs/mtls_architecture.png)
-
-### Logical Flow 
-
-┌─────────────────────────────────────────────────────────────┐
-│              Certificate Authority (CA)                      │
-│         Signs all certificates (broker + clients)            │
-└──────────────────┬──────────────────────┬───────────────────┘
-                   │ Signs                │ Signs
-          ┌────────▼──────┐      ┌────────▼──────────┐
-          │  MQTT Broker  │      │   Client Certs    │
-          │  (Mosquitto)  │◄────►│ (Sensor / App)    │
-          │  Port: 8883   │      │  mTLS both ways   │
-          └───────────────┘      └───────────────────┘
-                   │
-        ┌──────────▼──────────┐
-        │  Wireshark Verified  │
-        │  TLS 1.3 Handshake  │
-        │  Port 8883 Captured  │
-        └─────────────────────┘
-
-
 ###  Explanation
 
  **Certificate Authority (CA)**: Issues and signs certificates for both broker and clients  
